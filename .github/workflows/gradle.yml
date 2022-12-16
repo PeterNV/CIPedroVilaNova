@@ -18,9 +18,9 @@ permissions:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    container:
+      image: docker://peternewtown/repositoriodockerdapratica06:imagemdapratica06
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 19.0.1+10
